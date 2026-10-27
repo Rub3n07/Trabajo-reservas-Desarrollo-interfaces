@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefWidth="1050" prefHeight="700" stylesheets="@estilos.css"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="HotelController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="14" styleClass="cabecera">
+            <VBox spacing="5" HBox.hgrow="ALWAYS">
+                <Label text="HOTELAPP" styleClass="marca"/>
+                <Label fx:id="lblHotel" text="Cargando hotel..." styleClass="titulo"/>
+            </VBox>
+            <Label text="GESTIÓN DE HABITACIONES" styleClass="insignia"/>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="22">
+            <padding><Insets top="26" right="30" bottom="26" left="30"/></padding>
+            <VBox spacing="6">
+                <Label text="Consulta las habitaciones" styleClass="seccion"/>
+                <Label text="Revisa el listado o busca una habitación por su número." styleClass="secundario"/>
+            </VBox>
+            <HBox spacing="24" VBox.vgrow="ALWAYS">
+                <VBox spacing="14" HBox.hgrow="ALWAYS" styleClass="panel">
+                    <Label text="Habitaciones del hotel" styleClass="subtitulo"/>
+                    <TableView fx:id="tablaHabitaciones" prefWidth="580" VBox.vgrow="ALWAYS">
+                        <columns>
+                            <TableColumn fx:id="colNumero" text="N.º" prefWidth="65"/>
+                            <TableColumn fx:id="colTipo" text="Tipo" prefWidth="115"/>
+                            <TableColumn fx:id="colCapacidad" text="Personas" prefWidth="80"/>
+                            <TableColumn fx:id="colPrecio" text="€/noche" prefWidth="85"/>
+                            <TableColumn fx:id="colEstado" text="Estado" prefWidth="120"/>
+                        </columns>
+                    </TableView>
+                    <Label text="Disponibilidad indicada en el registro del hotel" styleClass="nota"/>
+                </VBox>
+                <VBox spacing="18" prefWidth="320" minWidth="300" styleClass="panel">
+                    <Label text="Buscar habitación" styleClass="subtitulo"/>
+                    <Label text="Número de habitación" styleClass="etiqueta"/>
+                    <TextField fx:id="txtNumero" promptText="Ej. 310" onAction="#buscarHabitacion"/>
+                    <Button text="Buscar habitación" onAction="#buscarHabitacion" defaultButton="true" maxWidth="Infinity" styleClass="principal"/>
+                    <Separator/>
+                    <Label text="RESULTADO DE LA CONSULTA" styleClass="nota"/>
+                    <Label fx:id="lblResultado" text="Escribe un número para consultar sus datos y disponibilidad." wrapText="true" maxWidth="Infinity" styleClass="resultado"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+    <bottom>
+        <Label text="Hotel Sol · Consulta de disponibilidad" styleClass="pie" maxWidth="Infinity"/>
+    </bottom>
+</BorderPane>

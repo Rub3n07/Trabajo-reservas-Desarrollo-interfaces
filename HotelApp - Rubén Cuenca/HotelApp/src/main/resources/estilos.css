@@ -1,0 +1,25 @@
+.root { -fx-font-family: "Calibri", "Arial"; -fx-font-size: 15px; -fx-background-color: #f2f5f8; }
+.cabecera { -fx-background-color: #132d3d; -fx-padding: 26 32; }
+.marca { -fx-text-fill: #91c5c5; -fx-font-size: 12px; -fx-font-weight: bold; }
+.titulo { -fx-text-fill: white; -fx-font-size: 29px; -fx-font-weight: bold; }
+.insignia { -fx-text-fill: #c1d5df; -fx-font-size: 12px; -fx-padding: 9 13; -fx-background-color: #254453; -fx-background-radius: 6; }
+.seccion { -fx-font-size: 25px; -fx-font-weight: bold; -fx-text-fill: #192f40; }
+.secundario { -fx-text-fill: #637482; }
+.panel { -fx-background-color: white; -fx-background-radius: 12; -fx-padding: 22; -fx-border-color: #e0e7ed; -fx-border-radius: 12; }
+.subtitulo { -fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #203a4b; }
+.etiqueta { -fx-text-fill: #334e60; }
+.text-field { -fx-background-color: #f5f8fa; -fx-border-color: #cbd8e2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 12; -fx-font-size: 17px; }
+.text-field:focused { -fx-border-color: #268b87; }
+.principal { -fx-background-color: #167e7a; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 13 18; -fx-background-radius: 6; -fx-cursor: hand; }
+.principal:hover { -fx-background-color: #106963; }
+.resultado { -fx-background-color: #edf5f5; -fx-background-radius: 8; -fx-padding: 18; -fx-text-fill: #234b52; -fx-line-spacing: 5; -fx-min-height: 125; }
+.nota { -fx-text-fill: #71828e; -fx-font-size: 12px; }
+.table-view { -fx-background-color: white; -fx-border-color: #e1e8ee; -fx-padding: 0; -fx-selection-bar: #d6eeeb; -fx-selection-bar-non-focused: #e6f2f0; }
+.table-view .column-header-background { -fx-background-color: #edf2f6; }
+.table-view .column-header { -fx-background-color: transparent; -fx-pref-height: 43; -fx-border-color: transparent; }
+.table-view .column-header .label { -fx-text-fill: #536a79; -fx-alignment: CENTER_LEFT; -fx-padding: 0 8; }
+.table-row-cell { -fx-cell-size: 49; -fx-background-color: white; }
+.table-row-cell:odd { -fx-background-color: #f7f9fb; }
+.table-row-cell:selected { -fx-background-color: #d6eeeb; }
+.table-cell { -fx-border-color: transparent; -fx-padding: 14 8; -fx-text-fill: #233e50; }
+.pie { -fx-background-color: #e8eef3; -fx-padding: 13 32; -fx-font-size: 12px; -fx-text-fill: #697f8e; }
